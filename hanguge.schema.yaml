@@ -12,11 +12,11 @@ schema:
     A Romanized schema for typing Hangeul and Hanja
     The transliteration system for Hangeul is similar to Fukui(福井玲式) and Abkai(太清轉寫), but without using any non-letter (`/speller/algebra`)
     
-    * Required [TH폰트](http://cheonhyeong.com/File/TH-Tshyn-3.0.0.7z) for displaying non-Unicode old-Hangeul characters
+    ㆍRequired [TH폰트](http://cheonhyeong.com/File/TH-Tshyn-3.0.0.7z) for displaying non-Unicode old-Hangeul characters
     
-    # Special Thanks
-    - Sim Cheon Hyeong [Extended Hangeul Spelling and Displaying]
-    - Choe Hwanjin [Hanja Dictionary](https://github.com/choehwanjin/libhangul)
+    Special Thanks
+    ㆍSim Cheon Hyeong [Extended Hangeul Spelling and Displaying]
+    ㆍChoe Hwanjin [Hanja Dictionary](https://github.com/choehwanjin/libhangul)
     
   dependencies:
     - oldhangeul # dictionary [Download](http://cheonhyeong.com/File/Rime-OldHangeul-SimCH-V3.0.7z)
@@ -53,7 +53,6 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    #- table_translator
   filters:
     - simplifier
     - simplifier@hanjaeum
@@ -84,10 +83,10 @@ speller:
     - xform/ĉ/cv/
     - xform/č/cf/
     - xform/([sjc])([fv])\1\2/$1$1$2/
-    #- derive/y[ou]y/yw/
     
 translator:
   dictionary: oldhangeul
+  prism: hanguge
   spelling_hints: 7
   
   comment_format: *mapping
@@ -119,7 +118,7 @@ goyueo:
   opencc_config: korean_goyueo.json
   option_name: goyueo
   tips: all
-
+  
 punctuator:
   import_preset: symbols
 
