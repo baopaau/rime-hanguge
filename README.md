@@ -1,1 +1,1 @@
-# [See here](hanguge.schema.yaml)
+# [hanguge.schema.yaml](hanguge.schema.yaml)
