@@ -54,17 +54,17 @@ engine:
     - punct_translator
     - script_translator
   filters:
-    - simplifier
     - simplifier@hanjaeum
     - simplifier@goyueo
     - uniquifier
 
 menu:
-  page_size: 6
+  page_size: 10
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
-  delimiter: " -"
+  delimiter: " '"
+  use_space: true
   algebra: &mapping
     - xlit/plmkjhn_oiub_dDgG_aAqQvV_srzeRxZfF_tTYwWEcXCy/ʌiwaeou_AEOU_qŋhx_mɱbvpf_ngkdDtTrl_sŝšjĵǰcĉčz/
     #ㆍㅣㅡㅏㅓㅗㅜ　ㅑㅕㅛㅠ　ㅇㆁㅎㆆ　ㅁㅱㅂㅸㅍㆄ　ㄴㄱㅋㄷ디ㅌ티ㄹᄛ　ㅅᄼᄾㅈᅎᅐㅊᅔᅕㅿ
@@ -87,7 +87,7 @@ speller:
 translator:
   dictionary: oldhangeul
   prism: hanguge
-  spelling_hints: 7
+  spelling_hints: 10
   
   comment_format: *mapping
   preedit_format:
@@ -124,8 +124,6 @@ punctuator:
 
 key_binder:
   import_preset: default
-  bindings:
-    - { when: has_menu, accept: space, send: "-" }
   
 recognizer:
   import_preset: default
