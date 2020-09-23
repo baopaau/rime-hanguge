@@ -59,7 +59,7 @@ engine:
     - uniquifier
 
 menu:
-  page_size: 10
+  page_size: 9
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -87,7 +87,7 @@ speller:
 translator:
   dictionary: oldhangeul
   prism: hanguge
-  spelling_hints: 10
+  spelling_hints: 9
   
   comment_format: *mapping
   preedit_format:
