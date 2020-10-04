@@ -1,1 +1,1 @@
-# [hanguge.schema.yaml](hanguge.schema.yaml)
+# [korean.hanguge.schema.yaml](korean.hanguge.schema.yaml)
