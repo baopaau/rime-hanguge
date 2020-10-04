@@ -1,0 +1,12 @@
+# encoding: utf-8
+---
+name: korean
+version: "1.0"
+sort: original
+use_preset_vocabulary: false
+import_tables:
+  - oldhangeul
+  - korean.hanja.char
+  - korean.hanja.word
+  - korean.pharse
+...
